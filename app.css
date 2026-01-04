@@ -937,10 +937,8 @@ input:checked+.slider:before {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    display: block;
+    text-align: center;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 4px 20px rgba(0, 243, 255, 0.2);
@@ -1051,8 +1049,10 @@ input:checked+.slider:before {
 .benefit-item span {
     color: #ddd;
     font-size: 0.95rem;
-} 
- 
+}
+
+   
+
 /* Hero Video Thumbnail */
 .teaser-hero-video {
     position: relative;
@@ -1140,8 +1140,17 @@ input:checked+.slider:before {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.2); opacity: 0.8; }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
 }
 
 .login-container {
